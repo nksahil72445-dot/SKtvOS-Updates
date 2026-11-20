@@ -1,5 +1,7 @@
 # SKtvOS Updates
 
+**Current test release: [SKtvOS 3.2.3 / build 43](https://github.com/nksahil72445-dot/SKtvOS-Updates/releases/tag/v3.2.3-build43).** Floating glass focus, Inter fonts, updated VPN panel and remote navigation. Not yet physically tested on TV.
+
 Public APK downloads and the update feed for SKtvOS. This repository contains release information and APKs, not TV backups, account data, debugging keys, signing private keys or the application source workspace.
 
 ## Downloads
@@ -27,17 +29,8 @@ If the installed build is already the newest one, the app reports no newer eligi
 
 ## Release integrity
 
-Each release includes `SHA256SUMS.txt` for its APK. A checksum helps detect a changed download; Android's signature checks and SKtvOS's comparison with the installed signing identity are also required. Files posted under other accounts or repositories are not the configured update feed.
+Each release includes an APK checksum file (`SHA256SUMS.txt` on older releases; `PUBLIC-SHA256SUMS.txt` on build 43). A checksum helps detect a changed download; Android's signature checks and SKtvOS's comparison with the installed signing identity are also required. Files posted under other accounts or repositories are not the configured update feed.
 
 ## VPN setup note
 
-3.2.2 includes provider selection and switching guidance. An Android always-on VPN pinned to the previous provider may still require a change in Android VPN settings before a different provider can connect. Installing this APK does not silently change VPN settings or disconnect a running VPN.
-
-## Version sequence (older → newer)
-
-| Version | Android build | Status |
-| --- | ---: | --- |
-| [3.2.1](https://github.com/nksahil72445-dot/SKtvOS-Updates/releases/tag/v3.2.1-build38) | 38 | Previous original APK; old private update endpoint |
-| [3.2.2](https://github.com/nksahil72445-dot/SKtvOS-Updates/releases/tag/v3.2.2-build40) | 40 | Current; public in-app update feed |
-
-3.2.1 was archived later to fill a missing release. GitHub's release cards show newer versions first; this table shows the version sequence. Reordering preserves APKs, download URLs and checksums. Build 40 remains the recommended initial public-feed installation.
+3.2.3 shows available connection information and an Open VPN app chooser, without a preferred-provider setting. Android always-on VPN settings may still restrict switching providers. Installing the APK does not change those device settings.
