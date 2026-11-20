@@ -32,3 +32,12 @@ Each release includes `SHA256SUMS.txt` for its APK. A checksum helps detect a ch
 ## VPN setup note
 
 3.2.2 includes provider selection and switching guidance. An Android always-on VPN pinned to the previous provider may still require a change in Android VPN settings before a different provider can connect. Installing this APK does not silently change VPN settings or disconnect a running VPN.
+
+## Version sequence (older → newer)
+
+| Version | Android build | Status |
+| --- | ---: | --- |
+| [3.2.1](https://github.com/nksahil72445-dot/SKtvOS-Updates/releases/tag/v3.2.1-build38) | 38 | Previous original APK; old private update endpoint |
+| [3.2.2](https://github.com/nksahil72445-dot/SKtvOS-Updates/releases/tag/v3.2.2-build40) | 40 | Current; public in-app update feed |
+
+3.2.1 was archived later to fill a missing release. GitHub's release cards show newer versions first; this table shows the version sequence. Reordering preserves APKs, download URLs and checksums. Build 40 remains the recommended initial public-feed installation.
