@@ -1,6 +1,6 @@
 # SKtvOS Updates
 
-**Current test release: [SKtvOS 3.2.3 / build 43](https://github.com/nksahil72445-dot/SKtvOS-Updates/releases/tag/v3.2.3-build43).** Floating glass focus, Inter fonts, updated VPN panel and remote navigation. Not yet physically tested on TV.
+**Current test release: [SKtvOS 3.2.4 / build 44](https://github.com/nksahil72445-dot/SKtvOS-Updates/releases/tag/v3.2.4-build44).** Refined glass focus, Android9 signing-reader fix and one-button software updates. Not yet physically tested on TV.
 
 Public APK downloads and the update feed for SKtvOS. This repository contains release information and APKs, not TV backups, account data, debugging keys, signing private keys or the application source workspace.
 
@@ -29,8 +29,10 @@ If the installed build is already the newest one, the app reports no newer eligi
 
 ## Release integrity
 
-Each release includes an APK checksum file (`SHA256SUMS.txt` on older releases; `PUBLIC-SHA256SUMS.txt` on build 43). A checksum helps detect a changed download; Android's signature checks and SKtvOS's comparison with the installed signing identity are also required. Files posted under other accounts or repositories are not the configured update feed.
+Each release includes an APK checksum file (`SHA256SUMS.txt` on older releases; `PUBLIC-SHA256SUMS.txt` on build 44). A checksum helps detect a changed download; Android's signature checks and SKtvOS's comparison with the installed signing identity are also required. Files posted under other accounts or repositories are not the configured update feed.
 
 ## VPN setup note
 
-3.2.3 shows available connection information and an Open VPN app chooser, without a preferred-provider setting. Android always-on VPN settings may still restrict switching providers. Installing the APK does not change those device settings.
+3.2.4 shows available connection information and an Open VPN app chooser, without a preferred-provider setting. Android always-on VPN settings may still restrict switching providers. Installing the APK does not change those device settings.
+
+Build43 uses the older updater reader: install build44 once through Android installation without uninstalling. Later releases can use the corrected in-app updater.
